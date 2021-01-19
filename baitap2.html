@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var arr=[]
+    let n=prompt('nhap n phan tu' )
+    for(let i=0;i<n;i++){
+        arr[i]=prompt('nhap a'+'['+i+']')
+    }
+    let V=prompt('nhap  V' )
+   for (let i=0;i<arr.length;i++){
+       if(arr[i]==V){
+           x=arr.indexOf(V)
+            arr.splice(x,1)
+           arr.push(0)
+       }
+   }
+   console.log(arr)
+</script>
